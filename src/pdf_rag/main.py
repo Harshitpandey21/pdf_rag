@@ -2,7 +2,6 @@
 import sys
 import warnings
 from crew import PdfRag
-
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
 def run():
