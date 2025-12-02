@@ -8,7 +8,6 @@ load_dotenv()
 
 SCRIPT_DIR = Path(__file__).parent
 pdf_path = str(SCRIPT_DIR / "agentops.pdf")
-
 pdf_search_tool = PDFSearchTool(pdf=pdf_path)
 
 @CrewBase
