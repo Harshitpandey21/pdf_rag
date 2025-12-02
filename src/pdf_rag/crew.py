@@ -4,7 +4,6 @@ from crewai.project import CrewBase, agent, crew, task
 from typing import List
 from crewai_tools import PDFSearchTool  
 from dotenv import load_dotenv
-
 load_dotenv()
 
 SCRIPT_DIR = Path(__file__).parent
@@ -21,7 +20,7 @@ class PdfRag():
     def pdf_rag_agent(self) -> Agent:
         return Agent(
             config=self.agents_config['pdf_rag_agent'],
-             tools=[pdf_search_tool], #
+             tools=[pdf_search_tool], 
             verbose=True
         )
 
